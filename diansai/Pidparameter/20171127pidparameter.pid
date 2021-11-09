@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="gb2312"?>
+<pidPara>
+  <Pitch>
+    <Kp>-500</Kp>
+    <Ki>0</Ki>
+    <Kd>5</Kd>
+  </Pitch>
+  <Roll>
+    <Kp>500</Kp>
+    <Ki>0</Ki>
+    <Kd>-5</Kd>
+  </Roll>
+  <Yaw>
+    <Kp>0</Kp>
+    <Ki>0</Ki>
+    <Kd>0</Kd>
+  </Yaw>
+  <Height>
+    <Kp>0</Kp>
+    <Ki>0</Ki>
+    <Kd>0</Kd>
+  </Height>
+  <ratePitch>
+    <Kp>0.013</Kp>
+    <Ki>0.0004</Ki>
+    <Kd>0.0005</Kd>
+  </ratePitch>
+  <rateRoll>
+    <Kp>0.013</Kp>
+    <Ki>0.0004</Ki>
+    <Kd>0.0005</Kd>
+  </rateRoll>
+  <rateYaw>
+    <Kp>0.07</Kp>
+    <Ki>0.00012</Ki>
+    <Kd>-0.0002</Kd>
+  </rateYaw>
+  <accHeight>
+    <Kp>105</Kp>
+    <Ki>0.165</Ki>
+    <Kd>12.5</Kd>
+  </accHeight>
+</pidPara>

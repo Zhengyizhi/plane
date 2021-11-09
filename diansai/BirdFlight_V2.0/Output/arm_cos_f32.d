@@ -1,0 +1,10 @@
+..\output\arm_cos_f32.o: ..\Libraries\CMSIS\DSP_Lib\Source\FastMathFunctions\arm_cos_f32.c
+..\output\arm_cos_f32.o: ..\Libraries\CMSIS\Include\arm_math.h
+..\output\arm_cos_f32.o: ..\Libraries\CMSIS\Include\core_cm4.h
+..\output\arm_cos_f32.o: E:\MDK5\ARM\ARMCC\Bin\..\include\stdint.h
+..\output\arm_cos_f32.o: ..\Core\core_cmInstr.h
+..\output\arm_cos_f32.o: ..\Core\core_cmFunc.h
+..\output\arm_cos_f32.o: ..\Libraries\CMSIS\Include\core_cmSimd.h
+..\output\arm_cos_f32.o: E:\MDK5\ARM\ARMCC\Bin\..\include\string.h
+..\output\arm_cos_f32.o: E:\MDK5\ARM\ARMCC\Bin\..\include\math.h
+..\output\arm_cos_f32.o: ..\Libraries\CMSIS\Include\arm_common_tables.h

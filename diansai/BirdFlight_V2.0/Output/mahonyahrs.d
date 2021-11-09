@@ -1,0 +1,10 @@
+..\output\mahonyahrs.o: ..\Mymath\MahonyAHRS\MahonyAHRS.c
+..\output\mahonyahrs.o: ..\Mymath\MahonyAHRS\MahonyAHRS.h
+..\output\mahonyahrs.o: ..\Libraries\CMSIS\Include\arm_math.h
+..\output\mahonyahrs.o: ..\Libraries\CMSIS\Include\core_cm4.h
+..\output\mahonyahrs.o: E:\MDK5\ARM\ARMCC\Bin\..\include\stdint.h
+..\output\mahonyahrs.o: ..\Core\core_cmInstr.h
+..\output\mahonyahrs.o: ..\Core\core_cmFunc.h
+..\output\mahonyahrs.o: ..\Libraries\CMSIS\Include\core_cmSimd.h
+..\output\mahonyahrs.o: E:\MDK5\ARM\ARMCC\Bin\..\include\string.h
+..\output\mahonyahrs.o: E:\MDK5\ARM\ARMCC\Bin\..\include\math.h

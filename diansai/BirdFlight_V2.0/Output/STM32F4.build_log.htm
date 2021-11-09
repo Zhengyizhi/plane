@@ -1,0 +1,127 @@
+<html>
+<body>
+<pre>
+<h1>礦ision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: μVision V5.31.0.0
+Copyright (C) 2020 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: aaaaa 郑怡芝, aaaaa, LIC=V8512-9CD0T-JMV98-3DSGN-NA0NA-6YDD2
+ 
+Tool Versions:
+Toolchain:       MDK-ARM Professional  Version: 5.31.0.0
+Toolchain Path:  E:\MDK5\ARM\ARMCC\Bin
+C Compiler:      Armcc.exe V5.06 update 6 (build 750)
+Assembler:       Armasm.exe V5.06 update 6 (build 750)
+Linker/Locator:  ArmLink.exe V5.06 update 6 (build 750)
+Library Manager: ArmAr.exe V5.06 update 6 (build 750)
+Hex Converter:   FromElf.exe V5.06 update 6 (build 750)
+CPU DLL:         SARMCM3.DLL V5.31.0.0
+Dialog DLL:      DCM.DLL V1.17.3.0
+Target DLL:      Segger\JL2CM3.dll V2.99.35.0
+Dialog DLL:      TCM.DLL V1.46.0.0
+ 
+<h2>Project:</h2>
+E:\电赛\daima\新建文件夹\juewang\diansai\BirdFlight_V2.0\Project\BirdFlight_V2.0.uvprojx
+Project File Date:  11/06/2021
+
+<h2>Output:</h2>
+*** Using Compiler 'V5.06 update 6 (build 750)', folder: 'E:\MDK5\ARM\ARMCC\Bin'
+Build target 'BirdFlight_V2.0'
+compiling stm32f4xx_main.c...
+compiling All_Task.c...
+compiling Inner_control.c...
+..\Control\Inner_control\Inner_control.c(140): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+  	pidRatePitch.pOut = 0.03 * ratePitchErro;
+..\Control\Inner_control\Inner_control.c(141): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+  	pidRatePitch.dOut = 0.0006 * deltaPitchRateErro;
+..\Control\Inner_control\Inner_control.c(142): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+  	pidRatePitch.iOut += 0.0006 * ratePitchErro;
+..\Control\Inner_control\Inner_control.c(173): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+  	pidRateRoll.pOut = 0.03 * rateRollErro;
+..\Control\Inner_control\Inner_control.c(174): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+  	pidRateRoll.dOut = 0.0005 * deltaRollRateErro;
+..\Control\Inner_control\Inner_control.c(175): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+  	pidRateRoll.iOut += 0.0005 * rateRollErro;
+..\Control\Inner_control\Inner_control.c(205): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+  	pidRateYaw.pOut =  0.08 * rateYawErro;
+..\Control\Inner_control\Inner_control.c(206): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+  	pidRateYaw.dOut =  0.00012 * deltaYawRateErro;
+..\Control\Inner_control\Inner_control.c(207): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+  	pidRateYaw.iOut += 0.001 * rateYawErro;
+..\Control\Inner_control\Inner_control.c(270): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+  	pidAccHeight.dOut = vdelta_us100 * 10.5;
+..\Control\Inner_control\Inner_control.c(271): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+  	pidAccHeight.iOut += verro_us100 * 0.11;
+..\Control\Inner_control\Inner_control.c(302): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+  		pidFlowx.pOut=0.05 * verro_flowx;//0.05yaw
+..\Control\Inner_control\Inner_control.c(303): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+  		pidFlowx.dOut=0.03 * vdelta_flowx;//0.03
+..\Control\Inner_control\Inner_control.c(328): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+  		pidFlowy.pOut=0.05 * verro_flowy;
+..\Control\Inner_control\Inner_control.c(329): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+  		pidFlowy.dOut=0.03 * vdelta_flowy;
+..\Control\Inner_control\Inner_control.c(237): warning:  #177-D: variable "pointvx_Kp"  was declared but never referenced
+  	float pointvx_Kp;
+..\Control\Inner_control\Inner_control.c(238): warning:  #177-D: variable "pointvx_Ki"  was declared but never referenced
+  	float pointvx_Ki;
+..\Control\Inner_control\Inner_control.c(239): warning:  #177-D: variable "pointvx_Kd"  was declared but never referenced
+  	float pointvx_Kd;
+..\Control\Inner_control\Inner_control.c(240): warning:  #177-D: variable "verro_pointx"  was declared but never referenced
+  	float verro_pointx;
+..\Control\Inner_control\Inner_control.c(241): warning:  #177-D: variable "vdelta_pointx"  was declared but never referenced
+  	float vdelta_pointx;
+..\Control\Inner_control\Inner_control.c(242): warning:  #177-D: variable "pointvy_Kp"  was declared but never referenced
+  	float pointvy_Kp;
+..\Control\Inner_control\Inner_control.c(243): warning:  #177-D: variable "pointvy_Ki"  was declared but never referenced
+  	float pointvy_Ki;
+..\Control\Inner_control\Inner_control.c(244): warning:  #177-D: variable "pointvy_Kd"  was declared but never referenced
+  	float pointvy_Kd;
+..\Control\Inner_control\Inner_control.c(245): warning:  #177-D: variable "verro_pointy"  was declared but never referenced
+  	float verro_pointy;
+..\Control\Inner_control\Inner_control.c(246): warning:  #177-D: variable "vdelta_pointy"  was declared but never referenced
+  	float vdelta_pointy;
+..\Control\Inner_control\Inner_control.c(250): warning:  #177-D: variable "pre_error_fuzzypid"  was declared but never referenced
+  	float pre_error_fuzzypid;
+..\Control\Inner_control\Inner_control.c(251): warning:  #177-D: variable "min_fuzzypid"  was declared but never referenced
+  	float min_fuzzypid,max_fuzzypid,kp_fuzzypid,ki_fuzzypid,kd_fuzzypid;
+..\Control\Inner_control\Inner_control.c(251): warning:  #177-D: variable "max_fuzzypid"  was declared but never referenced
+  	float min_fuzzypid,max_fuzzypid,kp_fuzzypid,ki_fuzzypid,kd_fuzzypid;
+..\Control\Inner_control\Inner_control.c(251): warning:  #177-D: variable "kp_fuzzypid"  was declared but never referenced
+  	float min_fuzzypid,max_fuzzypid,kp_fuzzypid,ki_fuzzypid,kd_fuzzypid;
+..\Control\Inner_control\Inner_control.c(251): warning:  #177-D: variable "ki_fuzzypid"  was declared but never referenced
+  	float min_fuzzypid,max_fuzzypid,kp_fuzzypid,ki_fuzzypid,kd_fuzzypid;
+..\Control\Inner_control\Inner_control.c(251): warning:  #177-D: variable "kd_fuzzypid"  was declared but never referenced
+  	float min_fuzzypid,max_fuzzypid,kp_fuzzypid,ki_fuzzypid,kd_fuzzypid;
+..\Control\Inner_control\Inner_control.c: 31 warnings, 0 errors
+compiling Outer_control.c...
+..\Control\Outer_control\Outer_control.c(332): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+  		pid_calculateflowX.pOut = X_pointerr * 0.00037;//0.00426height
+..\Control\Outer_control\Outer_control.c(333): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+  		pid_calculateflowX.iOut += X_pointerr * 0.00005/100.f;
+..\Control\Outer_control\Outer_control.c(334): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+  		pid_calculateflowX.dOut = Xdelta_pointerr * 0.00001;//0.0005
+..\Control\Outer_control\Outer_control.c(373): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+  	pid_calculateflowY.iOut += Y_pointerr * 0.00003/100.f;
+..\Control\Outer_control\Outer_control.c(374): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+  	pid_calculateflowY.dOut = Ydelta_pointerr * 0.00001;//0.0005
+..\Control\Outer_control\Outer_control.c: 5 warnings, 0 errors
+linking...
+Program Size: Code=65188 RO-data=1996 RW-data=1896 ZI-data=84648  
+FromELF: creating hex file...
+"..\Output\STM32F4.axf" - 0 Error(s), 36 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: Keil
+                http://www.keil.com/pack/Keil.STM32F4xx_DFP.2.14.0.pack
+                Keil.STM32F4xx_DFP.2.14.0
+                STMicroelectronics STM32F4 Series Device Support, Drivers and Examples
+
+<h2>Collection of Component include folders:</h2>
+  E:\MDK5\ARM\PACK\Keil\STM32F4xx_DFP\2.14.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include
+
+<h2>Collection of Component Files used:</h2>
+Build Time Elapsed:  00:00:02
+</pre>
+</body>
+</html>
